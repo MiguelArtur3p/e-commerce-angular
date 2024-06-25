@@ -1,0 +1,28 @@
+.item{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+    border-left: 2px solid white;
+    flex-basis: 10%;
+    flex-grow: 1;
+    text-align: center;
+}
+.item:hover{
+    background-color:  gray;
+}
+
+nav{
+    background-color: #616668;
+}
+
+@media (max-width:593px) {
+    .item{
+        font-size: 17px;
+    }
+}
+@media (max-width:250px) {
+    .item{
+        border-bottom: 1px solid gray;
+    }
+}
