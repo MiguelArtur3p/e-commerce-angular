@@ -1,0 +1,105 @@
+.containerNavbar{
+    padding: 0 30px 0 30px;
+    display: flex;
+    height: auto;
+    width: 100vw;
+    background-color: #f8edd1;
+    align-items: center;
+    justify-content: start;
+    gap:20px;
+}
+
+.navMenu{
+    flex: 1;
+}
+
+.navBrand{
+    list-style-type: none;
+    text-decoration: none;
+    color: #000;
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.navBrand:hover{
+    font-size: 35px;
+    transition: 0.6s;
+}
+
+.containerNavIcons{
+   width: 30%;
+}
+
+.form{
+    width: 50%;
+}
+.inputPesquisa{
+    height: 30px;
+    width: 100%;
+}
+.inputPesquisa:focus{
+    border: 2px solid gray;
+}
+
+.containerUl{
+    display: flex;
+    align-items: center;
+    gap:25px
+}
+
+.cart{
+    height: 30px;
+    width: 30px;
+}
+.heart{
+    height: 25px;
+    width: 25px;
+}
+
+.menu{
+    width:25px;
+    height: 25px;
+}
+
+.text-login{
+    font-size: 18px;
+}
+
+@media (max-width:573px) {
+    .navBrand{
+        display: none;
+    }
+    .form{
+        width: 70%;
+    }
+    .cart,.heart{
+        width: 20px;
+        height: 20px;
+    }
+    .text-login{
+        font-size: 16px;
+    }
+   .containerNavbar{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5px;
+        padding: 3px;
+    } 
+    .menu{
+        padding-right: 20px;
+    }
+}
+
+@media (max-width:348px)
+{
+    .heart,.cart{
+        width: 20px;
+        height: 20px;
+    }
+    .containerNavbar{
+        gap:20px
+    }
+    .form,.navBrand{
+        display: none;
+    }
+}
